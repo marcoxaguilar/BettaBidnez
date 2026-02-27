@@ -1,0 +1,52 @@
+# ═══════════════════════════════════════════════════
+# Better Climate Zone LLC - Netlify Configuration
+# ═══════════════════════════════════════════════════
+
+# ─── Build settings ───
+[build]
+  publish = "."
+
+# ─── Redirect www to non-www (canonical domain) ───
+[[redirects]]
+  from = "https://www.betterclimatezone.org/*"
+  to = "https://betterclimatezone.org/:splat"
+  status = 301
+  force = true
+
+# ─── Custom 404 page ───
+[[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 404
+
+# ─── Security & Performance Headers ───
+[[headers]]
+  for = "/*"
+  [headers.values]
+    # Security
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(self)"
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'"
+
+    # Caching
+    Cache-Control = "public, max-age=86400, stale-while-revalidate=604800"
+
+[[headers]]
+  for = "/sitemap.xml"
+  [headers.values]
+    Content-Type = "application/xml"
+    Cache-Control = "public, max-age=86400"
+
+[[headers]]
+  for = "/robots.txt"
+  [headers.values]
+    Content-Type = "text/plain"
+    Cache-Control = "public, max-age=86400"
+
+# ─── Form notification ───
+# NOTE: After deploying, go to Netlify Dashboard > Site settings > Forms > 
+# Form notifications > Add notification > Email notification
+# Set it to notify your email for the "quote-request" form.

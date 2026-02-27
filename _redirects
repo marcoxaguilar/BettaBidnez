@@ -1,0 +1,2 @@
+# Redirect www to non-www
+https://www.betterclimatezone.org/* https://betterclimatezone.org/:splat 301!

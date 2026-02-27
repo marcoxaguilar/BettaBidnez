@@ -1,0 +1,21 @@
+{
+  "name": "Better Climate Zone LLC",
+  "short_name": "BCZ HVAC",
+  "description": "Expert HVAC services in Gurnee & Lake County, IL. Furnace repair, AC installation, duct cleaning & more. 15+ years experience.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FBF7F0",
+  "theme_color": "#5BC0EB",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
