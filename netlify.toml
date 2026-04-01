@@ -8,8 +8,8 @@
 
 # ─── Redirect www to non-www (canonical domain) ───
 [[redirects]]
-  from = "https://www.betterclimatezone.org/*"
-  to = "https://betterclimatezone.org/:splat"
+  from = "https://www.betterclimatezone.com/*"
+  to = "https://betterclimatezone.com/:splat"
   status = 301
   force = true
 

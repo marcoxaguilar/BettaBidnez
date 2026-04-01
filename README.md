@@ -22,7 +22,7 @@ Production-ready HVAC website for Better Climate Zone LLC, optimized for SEO and
 ### Step 3: Set Up Custom Domain
 1. In Netlify Dashboard → **Domain settings**
 2. Click **"Add custom domain"**
-3. Enter `betterclimatezone.org`
+3. Enter `betterclimatezone.com`
 4. Follow DNS instructions (update nameservers at your domain registrar to point to Netlify)
 5. Netlify will auto-provision a free SSL certificate
 
@@ -85,8 +85,8 @@ After deploying, complete these steps for maximum SEO impact:
 
 1. **Submit Sitemap to Google Search Console**
    - Go to [search.google.com/search-console](https://search.google.com/search-console)
-   - Add your property (betterclimatezone.org)
-   - Go to Sitemaps → Submit `https://betterclimatezone.org/sitemap.xml`
+   - Add your property (betterclimatezone.com)
+   - Go to Sitemaps → Submit `https://betterclimatezone.com/sitemap.xml`
 
 2. **Submit to Bing Webmaster Tools**
    - Go to [bing.com/webmasters](https://www.bing.com/webmasters)

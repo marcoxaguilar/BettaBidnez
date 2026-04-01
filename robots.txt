@@ -1,11 +1,11 @@
 # Better Climate Zone LLC - robots.txt
-# https://betterclimatezone.org
+# https://betterclimatezone.com
 
 User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://betterclimatezone.org/sitemap.xml
+Sitemap: https://betterclimatezone.com/sitemap.xml
 
 # Crawl-delay (be gentle with our server)
 Crawl-delay: 10
