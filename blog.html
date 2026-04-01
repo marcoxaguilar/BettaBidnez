@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HVAC Tips & Guides for Lake County Homeowners | Better Climate Zone Blog</title>
+    <meta name="description" content="Expert HVAC tips, maintenance guides, and energy-saving advice for Gurnee & Lake County, IL homeowners. From furnace care to AC troubleshooting — read the Better Climate Zone blog.">
+    <meta name="keywords" content="HVAC blog Lake County IL, furnace tips Gurnee, AC advice Lake County, heating cooling blog, Better Climate Zone blog">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://betterclimatezone.com/blog.html">
+
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#5BC0EB">
+
+    <meta property="og:title" content="HVAC Tips & Guides | Better Climate Zone Blog">
+    <meta property="og:description" content="Expert HVAC tips and guides for Lake County, IL homeowners.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://betterclimatezone.com/blog.html">
+    <meta property="og:image" content="https://betterclimatezone.com/og-image.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --cream:         #FBF7F0;
+            --cream-warm:    #F5EDE0;
+            --parchment:     #EDE4D3;
+            --linen:         #FAF6EE;
+            --sky:           #5BC0EB;
+            --sky-soft:      #8DD4F0;
+            --sky-pale:      #D6EEF8;
+            --sky-deep:      #3AA5D4;
+            --sky-muted:     #A8D8EA;
+            --gold:          #F2D541;
+            --amber:         #F0A830;
+            --flame:         #E8562A;
+            --flame-soft:    #ED7B4F;
+            --gold-pale:     #FDF3C7;
+            --bark:          #3D3229;
+            --earth:         #5C4F3D;
+            --stone:         #7A7062;
+            --moss:          #8B8573;
+            --fog:           #C8C1B4;
+            --white:         #FFFFFF;
+            --text:          #3D3229;
+            --text-soft:     #6B5F51;
+            --text-muted:    #9A9083;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; font-size: 16px; }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            color: var(--text);
+            background: var(--cream);
+            overflow-x: hidden;
+            line-height: 1.65;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            pointer-events: none;
+            z-index: 9999;
+            opacity: 0.018;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E");
+        }
+
+        /* ─── HEADER ─── */
+        .blog-header {
+            background: var(--bark);
+            padding: 14px 0;
+        }
+        .container {
+            max-width: 1160px;
+            margin: 0 auto;
+            padding: 0 28px;
+        }
+        .blog-header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .blog-header a { text-decoration: none; }
+        .logo-name {
+            font-family: 'Lora', serif;
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: var(--white);
+        }
+        .header-cta {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+        }
+        .header-phone {
+            color: var(--gold);
+            font-weight: 700;
+            font-size: 0.92rem;
+            text-decoration: none;
+        }
+        .header-btn {
+            background: var(--sky);
+            color: var(--white);
+            padding: 8px 20px;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 0.82rem;
+            text-decoration: none;
+            transition: background 0.2s;
+        }
+        .header-btn:hover { background: var(--sky-deep); }
+
+        /* ─── PAGE HERO ─── */
+        .page-hero {
+            background: linear-gradient(135deg, var(--cream) 0%, var(--sky-pale) 50%, var(--cream-warm) 100%);
+            padding: 60px 0 50px;
+            text-align: center;
+        }
+        .page-hero-label {
+            font-family: 'Nunito', sans-serif;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--sky-deep);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 14px;
+        }
+        .page-hero-label::before,
+        .page-hero-label::after {
+            content: '';
+            width: 24px; height: 2px;
+            background: var(--sky);
+            border-radius: 2px;
+        }
+        .page-hero h1 {
+            font-family: 'Lora', serif;
+            font-size: clamp(2rem, 4.5vw, 3rem);
+            font-weight: 600;
+            line-height: 1.2;
+            color: var(--bark);
+            margin-bottom: 14px;
+        }
+        .page-hero p {
+            font-size: 1.05rem;
+            color: var(--text-soft);
+            max-width: 560px;
+            margin: 0 auto;
+            line-height: 1.75;
+        }
+
+        /* ─── BLOG CARDS ─── */
+        .blog-grid {
+            padding: 50px 0 70px;
+        }
+        .blog-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 32px;
+        }
+        .blog-card {
+            background: var(--white);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 2px 16px rgba(61,50,41,0.06);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+        }
+        .blog-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 36px rgba(61,50,41,0.12);
+        }
+        .blog-card-img {
+            height: 200px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .blog-card-img-heating {
+            background: linear-gradient(135deg, var(--sky-pale) 0%, var(--cream-warm) 50%, var(--gold-pale) 100%);
+        }
+        .blog-card-img-cooling {
+            background: linear-gradient(135deg, var(--gold-pale) 0%, var(--cream-warm) 40%, var(--sky-pale) 100%);
+        }
+        .blog-card-img::after {
+            font-size: 2.4rem;
+            letter-spacing: 12px;
+            opacity: 0.3;
+        }
+        .blog-card-img-heating::after { content: '🔥 ❄️ 🏠'; }
+        .blog-card-img-cooling::after { content: '❄️ 🌡️ 🏡'; }
+
+        .blog-card-body {
+            padding: 28px 28px 32px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .blog-card-tag {
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+        .tag-heating { color: var(--sky-deep); }
+        .tag-cooling { color: var(--flame); }
+        .blog-card-body h2 {
+            font-family: 'Lora', serif;
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--bark);
+            line-height: 1.3;
+            margin-bottom: 12px;
+        }
+        .blog-card-body p {
+            font-size: 0.94rem;
+            color: var(--text-soft);
+            line-height: 1.7;
+            margin-bottom: 20px;
+            flex: 1;
+        }
+        .blog-card-meta {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .blog-card-meta-dot { color: var(--fog); }
+        .blog-card-read {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.88rem;
+            font-weight: 700;
+            color: var(--sky-deep);
+            margin-top: 16px;
+            transition: gap 0.2s;
+        }
+        .blog-card:hover .blog-card-read { gap: 10px; }
+
+        /* ─── CTA BANNER ─── */
+        .blog-cta {
+            background: linear-gradient(135deg, var(--bark) 0%, #4A3F33 100%);
+            padding: 50px 0;
+            text-align: center;
+        }
+        .blog-cta h2 {
+            font-family: 'Lora', serif;
+            color: var(--white);
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+        }
+        .blog-cta p {
+            color: rgba(255,255,255,0.65);
+            margin-bottom: 24px;
+            font-size: 0.95rem;
+        }
+        .blog-cta-phone {
+            display: block;
+            font-family: 'Lora', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--gold);
+            text-decoration: none;
+            margin-bottom: 18px;
+        }
+        .blog-cta-btn {
+            display: inline-block;
+            background: var(--sky);
+            color: var(--white);
+            padding: 14px 32px;
+            border-radius: 10px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            text-decoration: none;
+            transition: background 0.2s;
+        }
+        .blog-cta-btn:hover { background: var(--sky-deep); }
+
+        /* ─── FOOTER ─── */
+        footer {
+            background: var(--bark);
+            color: rgba(255,255,255,0.55);
+            padding: 60px 0 30px;
+            font-size: 0.88rem;
+        }
+        .footer-inner {
+            max-width: 780px;
+            margin: 0 auto;
+            padding: 0 28px;
+            text-align: center;
+        }
+        .footer-inner .logo-name { margin-bottom: 10px; }
+        .footer-inner p { margin-bottom: 8px; }
+        .footer-inner a { color: var(--sky-soft); text-decoration: none; }
+        .footer-inner a:hover { color: var(--white); }
+        .footer-phone {
+            color: var(--gold);
+            font-weight: 700;
+            font-size: 1.1rem;
+            text-decoration: none;
+            display: inline-block;
+            margin: 12px 0;
+        }
+        .footer-links {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.08);
+            font-size: 0.8rem;
+        }
+        .footer-links a { margin: 0 10px; }
+
+        @media (max-width: 600px) {
+            .page-hero { padding: 40px 0 35px; }
+            .page-hero h1 { font-size: 1.7rem; }
+            .blog-cards { grid-template-columns: 1fr; }
+            .header-cta .header-btn { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="blog-header">
+        <div class="container">
+            <a href="/"><span class="logo-name">Better Climate Zone LLC</span></a>
+            <div class="header-cta">
+                <a href="tel:+12246565843" class="header-phone">(224) 656-5843</a>
+                <a href="/#contact" class="header-btn">Free Estimate</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+        <div class="container">
+            <span class="page-hero-label">Better Climate Zone Blog</span>
+            <h1>HVAC Tips &amp; Guides for<br>Lake County Homeowners</h1>
+            <p>Expert advice on furnace maintenance, AC troubleshooting, energy savings, and more — from your trusted local HVAC contractor in Gurnee, IL.</p>
+        </div>
+    </section>
+
+    <!-- BLOG CARDS -->
+    <section class="blog-grid">
+        <div class="container">
+            <div class="blog-cards">
+
+                <!-- BLOG POST 1 -->
+                <a href="/blog-furnace-maintenance-guide-lake-county.html" class="blog-card">
+                    <div class="blog-card-img blog-card-img-heating"></div>
+                    <div class="blog-card-body">
+                        <span class="blog-card-tag tag-heating">Heating &amp; Maintenance</span>
+                        <h2>The Complete Furnace Maintenance Guide for Lake County, IL Homeowners</h2>
+                        <p>Everything you need to know about keeping your furnace safe, efficient, and reliable — from annual tune-ups to warning signs you shouldn't ignore.</p>
+                        <div class="blog-card-meta">
+                            <span>April 1, 2026</span>
+                            <span class="blog-card-meta-dot">·</span>
+                            <span>8 min read</span>
+                        </div>
+                        <span class="blog-card-read">Read Article →</span>
+                    </div>
+                </a>
+
+                <!-- BLOG POST 2 -->
+                <a href="/blog-ac-not-cooling-reasons-lake-county.html" class="blog-card">
+                    <div class="blog-card-img blog-card-img-cooling"></div>
+                    <div class="blog-card-body">
+                        <span class="blog-card-tag tag-cooling">Air Conditioning &amp; Cooling</span>
+                        <h2>AC Not Cooling? 7 Reasons Your Air Conditioner Is Failing in Lake County, IL</h2>
+                        <p>Discover the most common reasons your AC isn't keeping up, what you can fix yourself, and when it's time to call a professional or replace the system.</p>
+                        <div class="blog-card-meta">
+                            <span>April 1, 2026</span>
+                            <span class="blog-card-meta-dot">·</span>
+                            <span>9 min read</span>
+                        </div>
+                        <span class="blog-card-read">Read Article →</span>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="blog-cta">
+        <div class="container">
+            <h2>Need HVAC Service in Lake County?</h2>
+            <p>Better Climate Zone LLC — 15+ years serving Gurnee, Grayslake, Highland Park, and all of Lake County, IL.</p>
+            <a href="tel:+12246565843" class="blog-cta-phone">(224) 656-5843</a>
+            <a href="/#contact" class="blog-cta-btn">Get a Free Estimate →</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-inner">
+            <div class="logo-name" style="font-family: 'Lora', serif;">Better Climate Zone LLC</div>
+            <p>Your trusted HVAC contractor serving Gurnee, IL and all of Lake County.</p>
+            <a href="tel:+12246565843" class="footer-phone">(224) 656-5843</a>
+            <p>betterclimatezone@icloud.com · Gurnee, IL · Lake County</p>
+            <div class="footer-links">
+                <a href="/">Home</a>
+                <a href="/#services">Services</a>
+                <a href="/blog.html">Blog</a>
+                <a href="/#reviews">Reviews</a>
+                <a href="/#contact">Contact</a>
+            </div>
+            <p style="margin-top: 16px; font-size: 0.78rem;">&copy; 2026 Better Climate Zone LLC. All rights reserved. Licensed HVAC Contractor · Gurnee, IL.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
